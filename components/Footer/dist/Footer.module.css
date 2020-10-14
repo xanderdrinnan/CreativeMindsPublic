@@ -1,0 +1,189 @@
+/*Common Theme Colors*/
+/*Fonts*/
+/*Cleanup*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Coda");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alata");
+/*Common Theme Colors*/
+/*Fonts*/
+/*Cleanup*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Coda");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alata");
+.footer-container {
+  display: flex;
+  overflow: auto;
+  bottom: 0;
+  background: url(/FooterBackground.png);
+  background-size: cover;
+  width: 100%;
+  color: white;
+  /*Alignment Style*/
+  vertical-align: middle;
+  text-align: center;
+  line-height: 5rem;
+  align-items: center;
+  /*Font*/
+  font-family: "Montserrat";
+}
+.footer-container .copyrightContainer {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+.footer-container .iconContainer {
+  position: absolute;
+  right: 0;
+  background-color: black;
+  border-radius: 100px 0px 0px 100px;
+  -moz-border-radius: 100px 0px 0px 100px;
+  -webkit-border-radius: 100px 0px 0px 100px;
+  border: 0px solid #000000;
+  padding-left: 3rem;
+}
+.footer-container .iconContainer #facebookIcon {
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.footer-container .iconContainer .media-icon {
+  color: white;
+  vertical-align: middle;
+  font-size: 4rem;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.footer-container .iconContainer .media-icon:hover {
+  opacity: 0.5;
+  color: #63bb64;
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1440px) {
+  .footer-container .media-icon {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 1439px) and (min-width: 1200px) {
+  .footer-container .media-icon {
+    font-size: 3rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .footer-container .copyrightContainer {
+    font-size: 1rem;
+  }
+  .footer-container .media-icon {
+    font-size: 3rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .footer-container .copyrightContainer {
+    font-size: 1rem;
+  }
+  .footer-container .media-icon {
+    font-size: 2rem !important;
+  }
+  .footer-container .iconContainer {
+    padding-left: 1rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 0.25rem !important;
+    margin-right: 0.25rem !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer-container .copyrightContainer {
+    font-size: 0.75rem;
+  }
+  .footer-container .media-icon {
+    font-size: 2rem;
+  }
+  .footer-container .iconContainer {
+    padding-left: 1rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-container .copyrightContainer {
+    font-size: 0.65rem;
+  }
+  .footer-container .media-icon {
+    font-size: 1.5rem;
+  }
+  .footer-container .iconContainer {
+    padding-left: 0.5rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer-container .copyrightContainer {
+    font-size: 0.65rem;
+  }
+  .footer-container .media-icon {
+    font-size: 1.5rem !important;
+  }
+  .footer-container .iconContainer {
+    padding-left: 0.5rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
+@media (max-width: 460px) {
+  .footer-container .copyrightContainer {
+    font-size: 0.65rem;
+  }
+  .footer-container .media-icon {
+    font-size: 1.5rem !important;
+  }
+  .footer-container .iconContainer {
+    padding-left: 0.5rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
+@media (max-width: 440px) {
+  .footer-container .media-icon {
+    font-size: 1.25rem !important;
+  }
+}
+@media (max-width: 420px) {
+  .footer-container .media-icon {
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .footer-container .copyrightContainer {
+    font-size: 0.4rem;
+  }
+  .footer-container .media-icon {
+    font-size: 1.25rem;
+  }
+  .footer-container .iconContainer {
+    padding-left: 0.5rem;
+  }
+  .footer-container #facebookIcon {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}

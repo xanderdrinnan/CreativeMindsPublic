@@ -1,2 +1,3 @@
 # CreativeMindsPublic
-Public repo of my freelance work for Creative Minds Daycare, stripped of most private and sensitive information. 
+
+Public repo of my freelance work for Xander Business, stripped of most private and sensitive information.

@@ -1,0 +1,395 @@
+/*Common Theme Colors*/
+/*Fonts*/
+/*Cleanup*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Coda");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alata");
+.headerWrapper {
+  z-index: 50 !important;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  background-color: white;
+}
+.headerWrapper .popout-info-container .address-pop,
+.headerWrapper .popout-info-container .email-pop,
+.headerWrapper .popout-info-container .phone-pop {
+  color: white;
+  right: 0;
+  background-color: black;
+  position: absolute;
+  border-radius: 100px 0px 0px 100px;
+  font-family: "Alata";
+}
+.headerWrapper .popout-info-container .address-pop p,
+.headerWrapper .popout-info-container .email-pop p,
+.headerWrapper .popout-info-container .phone-pop p {
+  position: absolute;
+  width: 100%;
+}
+.headerWrapper .contact-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: black;
+  border-radius: 100px 0px 0px 100px;
+  -moz-border-radius: 100px 0px 0px 100px;
+  -webkit-border-radius: 100px 0px 0px 100px;
+  border: 0px solid #000000;
+  text-align: center;
+}
+.headerWrapper .contact-container .nav-icons {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.headerWrapper .contact-container .nav-icons:hover {
+  color: #63bb64;
+}
+.headerWrapper .logoContainer {
+  position: relative;
+  text-decoration: none;
+  font-family: "Alata";
+}
+.headerWrapper .logoContainer .titleContainer {
+  float: right;
+}
+.headerWrapper .logoContainer .titleContainer h1 {
+  color: black;
+  margin-bottom: 0;
+}
+.headerWrapper .logoContainer .titleContainer h2 {
+  color: #7400a9;
+}
+.headerWrapper .logoContainer img {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.headerWrapper .logoContainer img:hover {
+  opacity: 0.5;
+}
+
+.navbar .navbar-nav {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/*Animation for left to right underline*/
+.nav-link {
+  text-decoration: none !important;
+  display: inline-block;
+  position: relative;
+  margin-left: 1em;
+  color: #000000 !important;
+  font-size: 2em;
+  font-family: "Montserrat";
+  outline: none;
+}
+.nav-link:before {
+  width: 0%;
+  transition: 300ms;
+  height: 6px;
+  content: "";
+  position: absolute;
+  background-color: #850091;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+  .contact-container {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+  .contact-container .nav-icons {
+    margin-left: 1rem;
+  }
+
+  .logoContainer img {
+    width: 100px;
+    left: 0;
+    top: 0;
+  }
+  .logoContainer .titleContainer {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .logoContainer .titleContainer h1 {
+    font-size: 1.25rem;
+  }
+  .logoContainer .titleContainer h2 {
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-nav {
+    margin-left: 4rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav .nav-link:before {
+    top: 3.25rem;
+    height: 4px;
+  }
+
+  .popout-info-container .address-pop,
+.popout-info-container .email-pop,
+.popout-info-container .phone-pop {
+    padding-bottom: 0.5rem !important;
+  }
+  .popout-info-container .address-pop {
+    width: 20rem;
+    height: 1.5rem;
+  }
+  .popout-info-container .email-pop {
+    width: 16rem;
+    height: 2rem;
+  }
+  .popout-info-container .phone-pop {
+    width: 10rem;
+    height: 2rem;
+  }
+}
+@media only screen and (max-width: 1919px) and (min-width: 1440px) {
+  .contact-container {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .contact-container .nav-icons {
+    margin-left: 1rem;
+  }
+
+  .logoContainer img {
+    width: 75px;
+    left: 0;
+    top: 0;
+  }
+  .logoContainer .titleContainer {
+    margin-top: 1.25rem;
+    margin-left: 1rem;
+  }
+  .logoContainer .titleContainer h1 {
+    font-size: 1.25rem;
+  }
+  .logoContainer .titleContainer h2 {
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-nav {
+    margin-left: 4rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.5rem;
+  }
+  .navbar .navbar-nav .nav-link:before {
+    top: 2.5rem;
+    height: 4px;
+  }
+
+  .popout-info-container .address-pop,
+.popout-info-container .email-pop,
+.popout-info-container .phone-pop {
+    padding-bottom: 0.5rem;
+  }
+  .popout-info-container .address-pop {
+    font-size: 0.8rem;
+    width: 15rem;
+    height: 2.5rem;
+  }
+  .popout-info-container .email-pop {
+    width: 16rem;
+    height: 2rem;
+  }
+  .popout-info-container .phone-pop {
+    width: 10rem;
+    height: 2rem;
+  }
+}
+@media only screen and (max-width: 1439px) and (min-width: 1200px) {
+  .contact-container {
+    font-size: 1.25rem;
+    padding-right: 0.5rem;
+  }
+  .contact-container .nav-icons {
+    margin-left: 0.75rem;
+  }
+
+  .logoContainer img {
+    width: 75px;
+    left: 0;
+  }
+  .logoContainer .titleContainer {
+    margin-top: 1.25rem;
+    margin-left: 1rem;
+  }
+  .logoContainer .titleContainer h1 {
+    font-size: 1.25rem;
+  }
+  .logoContainer .titleContainer h2 {
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-nav {
+    margin-left: 1rem;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+  .navbar .navbar-nav .nav-link:before {
+    top: 1.85rem;
+    height: 4px;
+  }
+
+  .popout-info-container .address-pop,
+.popout-info-container .email-pop,
+.popout-info-container .phone-pop {
+    padding-bottom: 0.5rem !important;
+  }
+  .popout-info-container .address-pop {
+    font-size: 1rem;
+    width: 20rem;
+    height: 2.5rem;
+  }
+  .popout-info-container .email-pop {
+    width: 16rem;
+    height: 2rem;
+  }
+  .popout-info-container .phone-pop {
+    width: 10rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .contact-container {
+    font-size: 1.25rem;
+    padding-right: 0.5rem;
+  }
+  .contact-container .nav-icons {
+    margin-left: 0.75rem;
+  }
+
+  .logoContainer img {
+    width: 75px;
+    left: 0;
+  }
+  .logoContainer .titleContainer {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+  .logoContainer .titleContainer h1 {
+    font-size: 1.25rem;
+  }
+  .logoContainer .titleContainer h2 {
+    font-size: 1rem;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.85rem;
+  }
+  .navbar .navbar-nav .nav-link:before {
+    top: 1.8rem;
+    height: 4px;
+  }
+
+  .popout-info-container .address-pop,
+.popout-info-container .email-pop,
+.popout-info-container .phone-pop {
+    padding-bottom: 0.5rem !important;
+  }
+  .popout-info-container .address-pop {
+    font-size: 1rem;
+    width: 12rem;
+    height: 3rem;
+  }
+  .popout-info-container .email-pop {
+    width: 13.5rem;
+    height: 1.5rem;
+    font-size: 0.85rem;
+  }
+  .popout-info-container .phone-pop {
+    width: 10rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .contact-container {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+  }
+  .contact-container .nav-icons {
+    margin-left: 0.5rem;
+  }
+
+  .logoContainer img {
+    width: 75px;
+    left: 0;
+  }
+  .logoContainer .titleContainer {
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  .logoContainer .titleContainer h1 {
+    font-size: 1rem;
+  }
+  .logoContainer .titleContainer h2 {
+    font-size: 0.75rem;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.85rem;
+  }
+  .navbar .navbar-nav .nav-link:before {
+    top: 1.7rem;
+    height: 4px;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 641px) {
+  .contact-container {
+    font-size: 0.75rem;
+    padding-right: 0.5rem;
+  }
+  .contact-container .nav-icons {
+    margin-left: 0.5rem;
+  }
+
+  .logoContainer img {
+    width: 75px;
+    left: 0;
+  }
+  .logoContainer .titleContainer {
+    margin-top: 1.5em;
+    margin-left: 0.75em;
+  }
+  .logoContainer .titleContainer h1 {
+    font-size: 1em;
+  }
+  .logoContainer .titleContainer h2 {
+    font-size: 0.75em;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.75em;
+  }
+  .navbar .navbar-nav .nav-link:before {
+    top: 2em;
+    height: 4px;
+  }
+}

@@ -1,0 +1,234 @@
+@import "../../styling/variables.module.scss";
+
+.Home {
+    z-index: -1 !important;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+    .location-container {
+        .location-info-container {
+            margin-bottom: 2rem;
+        }
+
+        margin-top: 2rem;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+        background: url(/MapBackground.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .map-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .divider {
+            border-bottom: 3px solid black;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .carouselContainer {
+        .carousel-indicators {
+            display: none;
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .carouselInner {
+            background-color: black;
+
+            img {
+                opacity: 0.6;
+            }
+
+            .captions {
+                text-align: left;
+                color: white;
+                margin: 0 auto;
+                width: 50%;
+                font-family: 'Alata';
+
+            }
+        }
+    }
+
+    .introduction-container {
+        color: black;
+        padding-top: 4rem;
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        display: grid;
+        grid-template-columns: 50%;
+        justify-content: center;
+
+        background: url(/IntroBackground.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h1 {
+            font-family: "Alata";
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-family: "Alata";
+            font-size: 2rem;
+        }
+
+        p {
+            font-family: "Alata";
+            font-size: 1.5rem;
+
+        }
+    }
+}
+
+/*Scaling */
+// @media only screen and (min-width: 1920px) {
+// }
+
+// @media only screen and (max-width: 1919px) and (min-width: 1440px) {
+// }
+
+// @media only screen and (max-width: 1439px) and (min-width: 1200px) {
+// }
+
+// @media (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
+    .introduction-container {
+        background: url(/IntroBackground992.png) !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    .captions {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// @media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
+    .introduction-container {
+        background: url(/IntroBackground768.png) !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .captions {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+// @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
+    .introduction-container {
+        background: url(/IntroBackground768.png) !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    .captions {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .introduction-container {
+        background: none !important;
+        grid-template-columns: 90% !important;
+        background: url(/mobileBackgroundHome.png) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+    .captions {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .introduction-container {
+        grid-template-columns: 90% !important;
+
+        h1 {
+            font-size: 2rem !important;
+        }
+
+        h3 {
+            font-size: 1.5rem !important;
+        }
+
+        p {
+            font-size: 1rem !important;
+
+        }
+    }
+    .captions {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .captions {
+        h1 {
+            font-size: 1.75rem;
+        }
+
+        h3 {
+            font-size: 1.10rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .introduction-container {
+        grid-template-columns: 90% !important;
+
+    }
+    .captions {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+}

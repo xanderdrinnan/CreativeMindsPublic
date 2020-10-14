@@ -1,0 +1,532 @@
+/*Common Theme Colors*/
+/*Fonts*/
+/*Cleanup*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Coda");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alata");
+.contact-container .contact-body-container {
+  display: grid;
+  justify-content: center;
+  margin: 2rem;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  -moz-box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  border: 2px solid black;
+  min-height: 100vh;
+}
+.contact-container .contact-body-container .inquiries-container {
+  color: white;
+  background-color: green;
+  padding-bottom: 1rem;
+}
+.contact-container .contact-body-container .inquiries-container .inquiries-content {
+  text-align: left;
+  padding-top: 3rem;
+}
+.contact-container .contact-body-container .inquiries-container .inquiries-content .information-container .himama-container img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+.contact-container .contact-body-container .inquiries-container .inquiries-content .information-container .inquiry-icon {
+  color: white;
+  margin-right: 0.5rem;
+}
+.contact-container .contact-body-container .inquiries-container .inquiries-content h1 {
+  font-family: "Raleway";
+}
+.contact-container .contact-body-container .inquiries-container .inquiries-content p {
+  font-family: "Raleway";
+}
+.contact-container .contact-body-container .form-container {
+  padding-left: 5rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.contact-container .contact-body-container .form-container .error-msg {
+  font-size: 1rem;
+  color: red;
+  margin-bottom: 1rem;
+  font-family: "Alata";
+}
+.contact-container .contact-body-container .form-container h1 {
+  font-family: "Raleway";
+}
+.contact-container .contact-body-container .form-container label {
+  font-family: "Alata";
+}
+.contact-container .contact-body-container .form-container .email-phone-container {
+  width: 100%;
+}
+.contact-container .contact-body-container .form-container .email-phone-container .email-container {
+  float: left;
+}
+.contact-container .contact-body-container .form-container .email-phone-container .phone-container {
+  float: right;
+}
+.contact-container .contact-body-container .form-container input[type=text]::placeholder {
+  font-size: 1.25rem;
+}
+.contact-container .contact-body-container .form-container textarea {
+  margin-top: 1rem;
+}
+.contact-container .contact-body-container .form-container textarea::placeholder {
+  font-size: 1.25rem;
+}
+.contact-container .contact-body-container .form-container .name-container input[type=text],
+.contact-container .contact-body-container .form-container .subject-container input[type=text],
+.contact-container .contact-body-container .form-container .content-container input[type=text] {
+  width: 100%;
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(720deg);
+  }
+}
+.contact-container .contact-body-container .form-container body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.contact-container .contact-body-container .form-container button {
+  font-family: "Raleway";
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  margin-top: 1rem;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+.contact-container .contact-body-container .form-container .spin {
+  border: 2px solid #158315;
+  color: #158315;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+}
+.contact-container .contact-body-container .form-container .spin span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 200ms ease-in-out;
+}
+.contact-container .contact-body-container .form-container .spin span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.contact-container .contact-body-container .form-container .spin svg {
+  height: 30px;
+  fill: #158315;
+}
+.contact-container .contact-body-container .form-container .spin:hover {
+  background-color: #158315;
+  color: #fff;
+}
+.contact-container .contact-body-container .form-container .spin.done, .contact-container .contact-body-container .form-container .spin.processing {
+  pointer-events: none;
+  cursor: default;
+}
+.contact-container .contact-body-container .form-container .spin.processing {
+  width: 50px;
+  border-width: 4px;
+  border-right-color: #bbb;
+  border-bottom-color: #bbb;
+  animation: spin;
+  animation-delay: 200ms;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.contact-container .contact-body-container .form-container .spin.processing:hover {
+  background-color: transparent;
+}
+.contact-container .contact-body-container .form-container .spin.processing span:first-child {
+  opacity: 0;
+}
+.contact-container .contact-body-container .form-container .spin.done:hover {
+  background-color: transparent;
+}
+.contact-container .contact-body-container .form-container .spin.done span:first-child {
+  opacity: 0;
+}
+.contact-container .contact-body-container .form-container .spin.done span:last-child {
+  opacity: 1;
+}
+
+/*Scaling */
+@media only screen and (min-width: 1920px) {
+  .contact-body-container {
+    grid-template-columns: 30% 70%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 2rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 10rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1919px) and (min-width: 1440px) {
+  .contact-body-container {
+    grid-template-columns: 30% 70%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.25rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 10rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1439px) and (min-width: 1200px) {
+  .contact-body-container {
+    grid-template-columns: 30% 70%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 2.25rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.15rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 8rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .contact-body-container {
+    grid-template-columns: 30% 70%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 1.85rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 0.85rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 8rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 3rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 8rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.25rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 7rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 7rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 0.85rem;
+  }
+}
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 0.85rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 1.75rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 0.85rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 7rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 0.85rem;
+  }
+}

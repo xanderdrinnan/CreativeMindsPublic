@@ -1,0 +1,177 @@
+.About {
+  background: url(/VerticalBackground.png);
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.486);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.About .title-container {
+  padding-top: 2rem;
+}
+.About .title-container h1 {
+  font-size: 4rem;
+  color: black;
+  font-family: "Alata";
+}
+.About .divider {
+  border-bottom: 3px solid black;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.About .about-container {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+  justify-content: center;
+}
+.About .about-container .owner-container,
+.About .about-container .employee-container {
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+  -moz-box-shadow: 2px 2px 2px 2px black;
+  box-shadow: 2px 2px 2px 2px black;
+  background-color: white;
+}
+.About .about-container .owner-container .inner-container,
+.About .about-container .employee-container .inner-container {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+.About .about-container .owner-container .inner-container h1,
+.About .about-container .owner-container .inner-container h2,
+.About .about-container .owner-container .inner-container h3,
+.About .about-container .employee-container .inner-container h1,
+.About .about-container .employee-container .inner-container h2,
+.About .about-container .employee-container .inner-container h3 {
+  font-family: "Montserrat";
+}
+.About .about-container .owner-container .inner-container h1,
+.About .about-container .employee-container .inner-container h1 {
+  font-size: 2rem;
+}
+.About .about-container .owner-container .inner-container h2,
+.About .about-container .employee-container .inner-container h2 {
+  font-size: 1.5rem;
+}
+.About .about-container .owner-container .inner-container .bio-container p,
+.About .about-container .employee-container .inner-container .bio-container p {
+  font-family: "Raleway";
+  text-align: left;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
+.About .about-container .owner-container .inner-container .role-container,
+.About .about-container .employee-container .inner-container .role-container {
+  padding-left: 2rem;
+  float: left;
+  padding-right: 2rem;
+}
+.About .about-container .owner-container img,
+.About .about-container .employee-container img {
+  width: 15rem;
+  border: 0.25rem solid black;
+}
+
+/*Scaling */
+@media only screen and (max-width: 1439px) and (min-width: 1200px) {
+  .About .about-container .owner-container .inner-container .bio-container p,
+.About .about-container .employee-container .inner-container .bio-container p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1199.98px) {
+  .About .about-container .owner-container .inner-container h1,
+.About .about-container .employee-container .inner-container h1 {
+    font-size: 1.75rem;
+  }
+  .About .about-container .owner-container .inner-container h2,
+.About .about-container .employee-container .inner-container h2 {
+    font-size: 1.25rem;
+  }
+  .About .about-container .owner-container .inner-container .bio-container p,
+.About .about-container .employee-container .inner-container .bio-container p {
+    font-size: 0.85rem;
+  }
+  .About .about-container .owner-container img,
+.About .about-container .employee-container img {
+    width: 8rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .About .about-container {
+    grid-template-columns: 90%;
+  }
+  .About .about-container .owner-container p,
+.About .about-container .employee-container p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .About .about-container {
+    grid-template-columns: 90%;
+  }
+  .About .about-container .owner-container p,
+.About .about-container .employee-container p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .About .about-container {
+    grid-template-columns: 90%;
+  }
+  .About .about-container .owner-container .inner-container h1,
+.About .about-container .employee-container .inner-container h1 {
+    font-size: 1.75rem;
+  }
+  .About .about-container .owner-container .inner-container h2,
+.About .about-container .employee-container .inner-container h2 {
+    font-size: 1.25rem;
+  }
+  .About .about-container .owner-container .inner-container .bio-container p,
+.About .about-container .employee-container .inner-container .bio-container p {
+    font-size: 0.85rem;
+  }
+  .About .about-container .owner-container img,
+.About .about-container .employee-container img {
+    width: 10rem;
+    border: 0.25rem solid black;
+  }
+}
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+  .About .about-container {
+    grid-template-columns: 90%;
+  }
+  .About .about-container .owner-container h1,
+.About .about-container .employee-container h1 {
+    font-size: 1.5rem;
+  }
+  .About .about-container .owner-container h2,
+.About .about-container .employee-container h2 {
+    font-size: 1.25rem;
+  }
+  .About .about-container .owner-container p,
+.About .about-container .employee-container p {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 319px) {
+  .About .about-container {
+    grid-template-columns: 90%;
+  }
+  .About .about-container .owner-container h1,
+.About .about-container .employee-container h1 {
+    font-size: 1.5rem;
+  }
+  .About .about-container .owner-container h2,
+.About .about-container .employee-container h2 {
+    font-size: 1.25rem;
+  }
+  .About .about-container .owner-container p,
+.About .about-container .employee-container p {
+    font-size: 0.7rem;
+  }
+}

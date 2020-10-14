@@ -1,0 +1,585 @@
+/*Common Theme Colors*/
+/*Fonts*/
+/*Cleanup*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Coda");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alata");
+.documentation-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  -moz-box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  border: 2px solid black;
+  text-align: center;
+  margin: 2rem;
+  margin-top: 0;
+}
+.documentation-container img {
+  width: fit-content;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  transition: transform 0.2s;
+}
+.documentation-container img:hover {
+  transform: scale(1.25);
+}
+
+.contact-body-container {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  margin: 2rem;
+  margin-top: 0;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  -moz-box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  box-shadow: 2px 2px 2px 2px rgba(184, 184, 184, 0.75);
+  border: 2px solid black;
+  min-height: 100vh;
+}
+.contact-body-container .inquiries-container {
+  color: white;
+  background-color: green;
+  padding-bottom: 1rem;
+}
+.contact-body-container .inquiries-container .inquiries-content {
+  text-align: left;
+  padding-top: 3rem;
+}
+.contact-body-container .inquiries-container .inquiries-content .information-container .himama-container img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+.contact-body-container .inquiries-container .inquiries-content .information-container .inquiry-icon {
+  color: white;
+  margin-right: 0.5rem;
+}
+.contact-body-container .inquiries-container .inquiries-content h1 {
+  font-family: "Raleway";
+}
+.contact-body-container .inquiries-container .inquiries-content p {
+  font-family: "Raleway";
+}
+.contact-body-container .form-container {
+  padding: 2rem;
+}
+.contact-body-container .form-container .error-msg {
+  font-size: 1rem;
+  color: red;
+  margin-bottom: 1rem;
+  font-family: "Alata";
+}
+.contact-body-container .form-container h1 {
+  font-family: "Raleway";
+}
+.contact-body-container .form-container label {
+  font-family: "Alata";
+}
+.contact-body-container .form-container .email-phone-container {
+  width: 100%;
+}
+.contact-body-container .form-container .email-phone-container .email-container {
+  float: left;
+}
+.contact-body-container .form-container .email-phone-container .phone-container {
+  float: right;
+}
+.contact-body-container .form-container input[type=text]::placeholder {
+  font-size: 1.25rem;
+}
+.contact-body-container .form-container textarea::placeholder {
+  font-size: 1.25rem;
+}
+.contact-body-container .form-container .name-container input[type=text],
+.contact-body-container .form-container .subject-container input[type=text],
+.contact-body-container .form-container .content-container input[type=text] {
+  width: 100%;
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(720deg);
+  }
+}
+.contact-body-container .form-container body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.contact-body-container .form-container button {
+  font-family: "Raleway";
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  margin-top: 1rem;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+.contact-body-container .form-container .spin {
+  border: 2px solid #158315;
+  color: #158315;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+}
+.contact-body-container .form-container .spin span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 200ms ease-in-out;
+}
+.contact-body-container .form-container .spin span:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.contact-body-container .form-container .spin svg {
+  height: 30px;
+  fill: #158315;
+}
+.contact-body-container .form-container .spin:hover {
+  background-color: #158315;
+  color: #fff;
+}
+.contact-body-container .form-container .spin.done, .contact-body-container .form-container .spin.processing {
+  pointer-events: none;
+  cursor: default;
+}
+.contact-body-container .form-container .spin.processing {
+  width: 50px;
+  border-width: 4px;
+  border-right-color: #bbb;
+  border-bottom-color: #bbb;
+  animation: spin;
+  animation-delay: 200ms;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+.contact-body-container .form-container .spin.processing:hover {
+  background-color: transparent;
+}
+.contact-body-container .form-container .spin.processing span:first-child {
+  opacity: 0;
+}
+.contact-body-container .form-container .spin.done:hover {
+  background-color: transparent;
+}
+.contact-body-container .form-container .spin.done span:first-child {
+  opacity: 0;
+}
+.contact-body-container .form-container .spin.done span:last-child {
+  opacity: 1;
+}
+
+/*Scaling */
+@media (min-width: 1920px) {
+  .contact-body-container {
+    grid-template-columns: 30% 70%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 2rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container .name-container,
+.contact-body-container .form-container .subject-container,
+.contact-body-container .form-container .content-container {
+    margin-bottom: 1rem;
+  }
+  .contact-body-container .form-container button {
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container input[type=text] {
+    height: 3rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 10rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1440px) {
+  .contact-body-container {
+    grid-template-columns: 30% 70%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.25rem;
+  }
+  .contact-body-container .form-container .name-container,
+.contact-body-container .form-container .subject-container,
+.contact-body-container .form-container .content-container {
+    margin-bottom: 1rem;
+  }
+  .contact-body-container .form-container button {
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container input[type=text] {
+    height: 3rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 8rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .documentation-container img {
+    width: 100px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .contact-body-container {
+    grid-template-columns: 30% 70%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 1.85rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container .name-container,
+.contact-body-container .form-container .subject-container,
+.contact-body-container .form-container .content-container {
+    margin-bottom: 1rem;
+  }
+  .contact-body-container .form-container button {
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container input[type=text] {
+    height: 3rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 8rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .documentation-container img {
+    width: 80px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 3rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 8rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .documentation-container img {
+    width: 70px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 3rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 8rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .documentation-container img {
+    width: 60px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 2rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 7rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container {
+    float: left;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container {
+    float: right;
+    width: 45%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 480px) {
+  .documentation-container img {
+    width: 40px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .contact-body-container {
+    grid-template-columns: 100%;
+  }
+  .contact-body-container .inquiries-container .inquiries-content {
+    padding-left: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content p {
+    font-size: 1rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content h1 {
+    font-size: 2.25rem;
+  }
+  .contact-body-container .inquiries-container .inquiries-content .inquiry-icon {
+    margin-right: 0.5rem;
+  }
+  .contact-body-container .form-container {
+    padding: 2rem !important;
+  }
+  .contact-body-container .form-container button {
+    width: 15rem;
+  }
+  .contact-body-container .form-container h1 {
+    font-size: 1.5rem;
+  }
+  .contact-body-container .form-container p {
+    font-size: 0.85rem;
+  }
+  .contact-body-container .form-container label {
+    font-size: 1rem;
+  }
+  .contact-body-container .form-container .email-phone-container {
+    margin-bottom: 7rem;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .email-container input[type=text]::placeholder {
+    font-size: 0.75rem;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text] {
+    width: 100%;
+  }
+  .contact-body-container .form-container .email-phone-container .phone-container input[type=text]::placeholder {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 420px) {
+  .documentation-container img {
+    width: 35px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

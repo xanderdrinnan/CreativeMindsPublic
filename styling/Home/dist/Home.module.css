@@ -1,0 +1,181 @@
+/*Common Theme Colors*/
+/*Fonts*/
+/*Cleanup*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Coda");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alata");
+.Home {
+  z-index: -1 !important;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.Home .location-container {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  background: url(/MapBackground.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Home .location-container .location-info-container {
+  margin-bottom: 2rem;
+}
+.Home .location-container .map-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.Home .location-container .divider {
+  border-bottom: 3px solid black;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.Home .carouselContainer .carousel-indicators {
+  display: none;
+}
+.Home .carouselContainer .carousel-control-prev-icon, .Home .carouselContainer .carousel-control-next-icon {
+  width: 5rem;
+  height: 5rem;
+}
+.Home .carouselContainer .carouselInner {
+  background-color: black;
+}
+.Home .carouselContainer .carouselInner img {
+  opacity: 0.6;
+}
+.Home .carouselContainer .carouselInner .captions {
+  text-align: left;
+  color: white;
+  margin: 0 auto;
+  width: 50%;
+  font-family: "Alata";
+}
+.Home .introduction-container {
+  color: black;
+  padding-top: 4rem;
+  background-color: white;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 50%;
+  justify-content: center;
+  background: url(/IntroBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Home .introduction-container h1 {
+  font-family: "Alata";
+  font-size: 3rem;
+}
+.Home .introduction-container h3 {
+  font-family: "Alata";
+  font-size: 2rem;
+}
+.Home .introduction-container p {
+  font-family: "Alata";
+  font-size: 1.5rem;
+}
+
+/*Scaling */
+@media (max-width: 1199.98px) {
+  .introduction-container {
+    background: url(/IntroBackground992.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .captions h1 {
+    font-size: 2rem;
+  }
+  .captions h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .introduction-container {
+    background: url(/IntroBackground768.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .captions h1 {
+    font-size: 2rem;
+  }
+  .captions h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .introduction-container {
+    background: url(/IntroBackground768.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .captions h1 {
+    font-size: 2.5rem;
+  }
+  .captions h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .introduction-container {
+    background: none !important;
+    grid-template-columns: 90% !important;
+    background: url(/mobileBackgroundHome.png) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .captions h1 {
+    font-size: 2rem;
+  }
+  .captions h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .introduction-container {
+    grid-template-columns: 90% !important;
+  }
+  .introduction-container h1 {
+    font-size: 2rem !important;
+  }
+  .introduction-container h3 {
+    font-size: 1.5rem !important;
+  }
+  .introduction-container p {
+    font-size: 1rem !important;
+  }
+
+  .captions h1 {
+    font-size: 2rem;
+  }
+  .captions h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 420px) {
+  .captions h1 {
+    font-size: 1.75rem;
+  }
+  .captions h3 {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .introduction-container {
+    grid-template-columns: 90% !important;
+  }
+
+  .captions h1 {
+    font-size: 2rem;
+  }
+  .captions h3 {
+    font-size: 1rem;
+  }
+}
