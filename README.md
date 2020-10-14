@@ -1,3 +1,4 @@
 # CreativeMindsPublic
 
-Public repo of my freelance work for Xander Business, stripped of most private and sensitive information.
+Public repo of my freelance work for Xander Business, stripped of private and sensitive information.
+This project was completed using React with NextJS, SASS, an emphasis on semantic HTML practices, and Boostrap, among various other packages. 
