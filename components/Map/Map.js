@@ -31,11 +31,11 @@ export class MapContainer extends Component {
         <Map
           google={this.props.google}
           zoom={16}
-          initialCenter={{ lat: 43.130853, lng: -80.270542 }}
+          initialCenter={{ lat: 43.4610907, lng: -80.5254834 }}
         >
           <Marker
-            position={{ lat: 43.130853, lng: -80.270542 }}
-            name={"Creative Minds Childrens Services"}
+            position={{ lat: 43.4610907, lng: -80.5254834 }}
+            name={"Xander Drinnan's Business"}
             onClick={this.onMarkerClick}
           />
           <InfoWindow
@@ -44,8 +44,8 @@ export class MapContainer extends Component {
             onClose={this.onClose}
           >
             <div className="info-window">
-              <p>Creative Minds Childrens Services</p>
-              <p>5 Wade Ave, Brantford, Ontario, Canada N3T 1W8</p>
+              <p>Xander Drinnan's Business</p>
+              <p>City of Waterloo, Ontario</p>
             </div>
           </InfoWindow>
         </Map>
@@ -55,5 +55,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyBCpbb8uaGxtEOA3FS7KCenXtJfcdPhRBY",
+  apiKey: "", //removed for public use
 })(MapContainer);
