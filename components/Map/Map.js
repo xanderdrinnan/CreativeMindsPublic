@@ -31,29 +31,35 @@ export class MapContainer extends Component {
         <Map
           google={this.props.google}
           zoom={16}
-          initialCenter={{ lat: 43.4517589, lng: -80.4946055 }}
+          initialCenter={{
+            lat: 43.4517589,
+            lng: -80.4946055,
+          }}
         >
           <Marker
-            position={{ lat: 43.4517589, lng: -80.4946055 }}
+            position={{
+              lat: 43.4517589,
+              lng: -80.4946055,
+            }}
             name={"Kitchener City Hall"}
             onClick={this.onMarkerClick}
-          />
+          />{" "}
           <InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}
             onClose={this.onClose}
           >
             <div className="info-window">
-              <p>Kitchener City Hall, near Xander!</p>
-              <p>Some address info here</p>
-            </div>
-          </InfoWindow>
-        </Map>
+              <p> Kitchener City Hall, near Xander! </p>{" "}
+              <p> Some address info here </p>{" "}
+            </div>{" "}
+          </InfoWindow>{" "}
+        </Map>{" "}
       </div>
     );
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyDdbAXped9-ITDclKtzydVAXqKRlqXgNGo",
+  apiKey: "AIzaSyB73fANbXZU3mIPRekVflLNNKAR1ruXnms",
 })(MapContainer);
