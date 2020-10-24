@@ -31,35 +31,29 @@ export class MapContainer extends Component {
         <Map
           google={this.props.google}
           zoom={16}
-          initialCenter={{
-            lat: 43.4517589,
-            lng: -80.4946055,
-          }}
+          initialCenter={{ lat: 43.130853, lng: -80.270542 }}
         >
           <Marker
-            position={{
-              lat: 43.4517589,
-              lng: -80.4946055,
-            }}
-            name={"Kitchener City Hall"}
+            position={{ lat: 43.130853, lng: -80.270542 }}
+            name={"Creative Minds Childrens Services"}
             onClick={this.onMarkerClick}
-          />{" "}
+          />
           <InfoWindow
             marker={this.state.activeMarker}
             visible={this.state.showingInfoWindow}
             onClose={this.onClose}
           >
             <div className="info-window">
-              <p> Kitchener City Hall, near Xander! </p>{" "}
-              <p> Some address info here </p>{" "}
-            </div>{" "}
-          </InfoWindow>{" "}
-        </Map>{" "}
+              <p>Creative Minds Childrens Services</p>
+              <p>5 Wade Ave, Brantford, Ontario, Canada N3T 1W8</p>
+            </div>
+          </InfoWindow>
+        </Map>
       </div>
     );
   }
 }
 
 export default GoogleApiWrapper({
-  apiKey: "AIzaSyB73fANbXZU3mIPRekVflLNNKAR1ruXnms",
+  apiKey: "AIzaSyBCpbb8uaGxtEOA3FS7KCenXtJfcdPhRBY",
 })(MapContainer);
